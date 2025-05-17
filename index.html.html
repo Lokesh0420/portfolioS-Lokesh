@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>S Lokesh - Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background-color: #0f172a;
+      color: #f1f5f9;
+    }
+
+    header {
+      background-color: #1e293b;
+      color: #f1f5f9;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.8rem;
+    }
+
+    nav {
+      background-color: #111827;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding: 0.8rem 0;
+      position: sticky;
+      top: 0;
+      z-index: 999;
+    }
+
+    nav a {
+      color: #f1f5f9;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #38bdf8;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 2rem 1rem;
+    }
+
+    .profile-section {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 2rem;
+      margin-bottom: 2rem;
+      background: #1e293b;
+      padding: 2rem;
+      border-radius: 10px;
+    }
+
+    .profile-section img {
+      width: 170px;
+      border-radius: 50%;
+      border: 4px solid #38bdf8;
+    }
+
+    .profile-info h2 {
+      margin-bottom: 0.5rem;
+      color: #f1f5f9;
+    }
+
+    .button {
+      display: inline-block;
+      background-color: #2563eb;
+      color: white;
+      padding: 0.6rem 1.2rem;
+      border-radius: 6px;
+      text-decoration: none;
+      margin-top: 1rem;
+      transition: background 0.3s;
+    }
+
+    .button:hover {
+      background-color: #1d4ed8;
+    }
+
+    .section {
+      margin-bottom: 2rem;
+    }
+
+    .section h3 {
+      color: #38bdf8;
+      margin-bottom: 1rem;
+      border-left: 5px solid #2563eb;
+      padding-left: 0.8rem;
+    }
+
+    .card {
+      background: #1e293b;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+      margin-bottom: 1.2rem;
+    }
+
+    ul {
+      margin-left: 1.5rem;
+    }
+
+    a {
+      color: #60a5fa;
+    }
+
+    footer {
+      background-color: #111827;
+      color: #9ca3af;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+
+    @media (max-width: 768px) {
+      .profile-section {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>S Lokesh</h1>
+  <p>Data Science Enthusiast | Full Stack Developer</p>
+</header>
+
+<nav>
+  <a href="#about">About</a>
+  <a href="#skills">Skills</a>
+  <a href="#projects">Projects</a>
+  <a href="#experience">Experience</a>
+  <a href="#education">Education</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<div class="container">
+
+  <section class="profile-section">
+    <img src="lokesh-photo.jpg" alt="Lokesh Photo" />
+    <div class="profile-info">
+      <h2>S Lokesh</h2>
+      <p><strong>Email:</strong> <a href="mailto:lokeshsankar37@gmail.com">lokeshsankar37@gmail.com</a></p>
+      <p><strong>Phone:</strong> +91 9345730553</p>
+      <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/lokesh-s-501498283" target="_blank">View Profile</a></p>
+      <a class="button" href="lokesh-resume.pdf" download>Download Resume</a>
+    </div>
+  </section>
+
+  <section class="section" id="about">
+    <h3>About Me</h3>
+    <div class="card">
+      <p>
+        I'm a final-year Computer Science Engineering student at Sathyabama Institute of Science and Technology with a strong foundation in Python, Data Science, and Web Development. To work for an organization which provides me the opportunity to improve my skills and knowledge to grow along with the organization’s objectives and vision. I'm eager to work in dynamic environments that challenge me to grow both technically and professionally.
+      </p>
+    </div>
+  </section>
+
+  <section class="section" id="skills">
+    <h3>Skills</h3>
+    <div class="card">
+      <ul>
+        <li>Programming: Python, SQL, HTML/CSS, ML Pipelines</li>
+        <li>Soft Skills: Adaptability, Team Collaboration, Communication</li>
+        <li>Languages: English, Tamil</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section" id="projects">
+    <h3>Projects</h3>
+    <div class="card">
+      <ul>
+        <li><strong>Student Result Management System:</strong> Secure login, queue system, and time-slot control to manage user load.</li>
+        <li><strong>FitFlex Web Application:</strong> Tracks user fitness goals with authentication and personalized workouts.</li>
+        <li><strong>Weather Prediction:</strong> Real-time Streamlit app using APIs and ML models with visualizations.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section" id="experience">
+    <h3>Experience</h3>
+    <div class="card">
+      <p><strong>VCODEZ, Chennai</strong> – <em>Data Science Intern (Jan 2025 – Apr 2025)</em></p>
+      <ul>
+        <li>Worked with real datasets to build predictive models.</li>
+        <li>Optimized pipelines and delivered insights with ML and Python.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section" id="education">
+    <h3>Education</h3>
+    <div class="card">
+      <ul>
+        <li><strong>Sathyabama Institute of Science and Technology</strong> – B.E. CSE, CGPA: 7.88 (2021–2025)</li>
+        <li>Sindhi Model School (CBSE), Chennai – XII: 86.6%</li>
+        <li>Maharishi Vidya Mandir (CBSE), Chennai – X: 82%</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section" id="contact">
+    <h3>Certifications</h3>
+    <div class="card">
+      <ul>
+        <li>NPTEL: Database Management System</li>
+        <li>Full Stack Development - Algoxfusion</li>
+        <li>MEAN Stack Development - Credo Systemz</li>
+      </ul>
+    </div>
+  </section>
+
+</div>
+
+
+
+</body>
+</html>
